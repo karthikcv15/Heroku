@@ -17,11 +17,12 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="const" placeholder="const" required="required" />
-    	<input type="text" name="Age" placeholder="Age" required="required" />
-    	<input type="text" name="KM" placeholder="KM" required="required" />
-		<input type="text" name="CC" placeholder="CC" required="required" />
-        <input type="text" name="Automatic" placeholder="Automatic" required="required" />
+    	<input type="text" name="powerPS" placeholder="power of the vehicle" required="required" />
+    	<input type="text" name="Kilometer" placeholder="Kilometers driven" required="required" />
+    	<input type="text" name="Age" placeholder="Car Age" required="required" />
+		<input type="text" name="gearbox" placeholder="input 1 for manual, 0 for automatic" required="required" />
+        <input type="text" name="fuelType" placeholder="input 1 for petrol, 0 for diesel" required="required" />
+        <input type="text" name="notRepairedDamage" placeholder="input 1 for YES, 0 for NO" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
