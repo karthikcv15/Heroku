@@ -13,7 +13,7 @@
 
 <body>
  <div class="login">
-	<h1>Predict car Price</h1>
+	<h1>Predict Car Price</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
@@ -22,7 +22,7 @@
     	<input type="text" name="Age" placeholder="Car Age" required="required" />
 		<input type="text" name="gearbox" placeholder="input 1 for manual, 0 for automatic" required="required" />
         <input type="text" name="fuelType" placeholder="input 1 for petrol, 0 for diesel" required="required" />
-        <input type="text" name="notRepairedDamage" placeholder="input 1 for YES, 0 for NO" required="required" />
+        <input type="text" name="notRepairedDamage" placeholder="input 1 for repaired, 0 for not repaired" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
